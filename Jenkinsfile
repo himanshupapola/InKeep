@@ -6,8 +6,8 @@ pipeline {
         BACKEND_IMAGE  = "inkeep-backend:latest"
 
         // Public/static values
-        DB_URL = "jdbc:mysql://mysql:3306/inkeep"
-        DB_USERNAME = "root"
+    
+        DB_USERNAME = "admin"
         VITE_API_BASE_URL = "http://localhost:8081/api"
         VITE_GEONAMES_USERNAME = "himanshu_singh_papol"
         CORS_ALLOWED_ORIGIN = "http://localhost:5173"

@@ -6,6 +6,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     image: otakucodes/inkeep-frontend
+    restart: always
     ports:
       - "5173:80"
     depends_on:
@@ -20,6 +21,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     image: otakucodes/inkeep
+    restart: always
     ports:
       - "8081:8081"
     environment:

@@ -33,7 +33,7 @@ InKeep is a fullstack web application designed to help users securely write, sav
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/InKeep.git
+git clone https://github.com/himanshupapola/InKeep.git
 cd InKeep
 ```
 
@@ -99,4 +99,4 @@ REDIS_TOKEN=your_redis_token
 
 - Railways - [`🚀 Click to Visit`][frontend-link]
 
-[frontend-link]: https://notworking.vercel.app/home
+[frontend-link]: https://inkeep-production.up.railway.app/

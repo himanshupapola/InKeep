@@ -3,6 +3,7 @@
 
 # Allow example env file (safe for Git)
 !.env.example
+android/app/google-services.json
 
 # Maven
 target/

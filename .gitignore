@@ -1,0 +1,62 @@
+# ========== Environment Files ==========
+.env
+.env.*
+!.env.example
+
+# ========== Logs ==========
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========== Build Outputs ==========
+target/
+build/
+dist/
+dist-ssr/
+*.local
+
+# Exclude generated build folders except inside /src/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ========== Node Modules ==========
+node_modules/
+
+# ========== Maven ==========
+.mvn/wrapper/maven-wrapper.jar
+
+# ========== IDEs ==========
+.idea/
+.vscode/
+!.vscode/extensions.json
+.classpath
+.project
+.settings
+.factorypath
+.springBeans
+.sts4-cache
+*.iml
+*.iws
+*.ipr
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========== NetBeans & Gradle ==========
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ========== Misc ==========
+.DS_Store
+HELP.md

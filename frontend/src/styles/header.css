@@ -1,0 +1,98 @@
+.logo {
+  height: 75px;
+  width: 160px;
+  margin-right: 30px;
+}
+
+.header {
+  background-color: #a04551;
+  box-shadow: 1px 1px 10px #656565;
+  position: relative;
+  z-index: 1000;
+}
+
+.subHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 8px 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.subNav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navlink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navlink:hover,
+.navlink.active {
+  color: #ffbdc6;
+}
+
+.logout__btn {
+  background-color: #9b2535;
+  color: white;
+  border: none;
+  padding: 6px 15px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #441218;
+}
+
+.logout__btn:hover {
+  background-color: #ff6d80;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none !important;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #a04551;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav.open {
+    display: flex !important;
+  }
+
+  .subNav {
+    flex-direction: column;
+    align-items: anchor-center;
+    gap: 12px;
+  }
+}

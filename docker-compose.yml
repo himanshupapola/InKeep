@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: otakucodes/inkeep-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    environment:
+      VITE_OPENWEATHER_API_KEY: ${VITE_OPENWEATHER_API_KEY}
+      VITE_GEONAMES_USERNAME: ${VITE_GEONAMES_USERNAME}
+      VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: otakucodes/inkeep
+    ports:
+      - "8081:8081"
+    environment:
+    DB_URL: ${DB_URL}
+    DB_USERNAME: ${DB_USERNAME}
+    DB_PASSWORD: ${DB_PASSWORD}
+    BREVO_API_KEY: ${BREVO_API_KEY}
+    UPSTASH_REDIS_URL: ${UPSTASH_REDIS_URL}
+    CORS_ALLOWED_ORIGIN: ${CORS_ALLOWED_ORIGIN}

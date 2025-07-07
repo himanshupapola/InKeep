@@ -1,0 +1,28 @@
+@media (max-width: 809px) {
+  .outer_btn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse !important;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1010px) {
+  .left_panel {
+    min-width: 100% !important;
+  }
+
+  .right_panel {
+    flex-direction: column !important;
+  }
+
+  .main_content {
+    justify-content: center !important;
+  }
+
+  .specialMood {
+    padding: 0 !important;
+    min-width: none;
+    gap: 0px;
+  }
+}

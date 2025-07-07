@@ -1,0 +1,71 @@
+.about__us {
+  background: #fff3f2;
+  padding: 2rem;
+  background: #fff3f2;
+  padding: 2rem;
+  height: 71vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about__main {
+  padding-top: 65px;
+  width: 50%;
+}
+
+.about__heading {
+  padding-top: 25px;
+  text-align: center;
+
+  font-size: 45px;
+}
+
+.about__text {
+  text-align: center;
+  padding: 45px;
+  font-size: 23px;
+}
+
+.about__image {
+  width: 50%;
+}
+
+.brand__name {
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+.highlight__text {
+  font-style: italic;
+  color: #333;
+}
+
+.brand__values {
+  font-weight: 500;
+  color: #2c7a7b;
+}
+@media (max-width: 768px) {
+  .about__us {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .about__main {
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+}

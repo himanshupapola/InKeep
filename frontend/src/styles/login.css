@@ -1,0 +1,210 @@
+.sign__outer {
+  display: flex;
+
+  margin: auto;
+  justify-content: center;
+  align-items: anchor-center;
+  min-height: 75vh;
+}
+
+.sign__inner {
+  width: 50%;
+}
+
+.sign__left {
+  padding: 61px 10px;
+}
+
+.sign__right {
+  padding: 60px 45px;
+}
+
+.signup {
+  box-shadow: 1px 1px 10px #d3d3d3;
+  padding: 38px 30px;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input__row {
+  display: flex;
+  gap: 16px;
+}
+
+.input__field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.input__field input {
+  border: none;
+  outline: none;
+  flex: 1;
+  margin-left: 10px;
+  background: transparent;
+}
+
+.submit__btn {
+  background-color: #aa4653;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.policy__text {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+.policy__text span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login__link {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.login__link a {
+  color: #aa4653;
+  font-weight: 500;
+}
+
+.login__calendar {
+  margin-right: 8px;
+  color: #333;
+}
+
+.login {
+  box-shadow: 1px 1px 10px #d3d3d3;
+  padding: 48px 70px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-outer {
+    height: 72vh;
+  }
+
+  .journal-text {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .backImage {
+    top: 0px;
+    left: 0;
+    width: 80%;
+    max-width: 384px;
+    filter: blur(1.8px);
+  }
+
+  .features-container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .start-journey {
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .input__row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sign__outer {
+    width: 90%;
+  }
+
+  .sign__left {
+    padding: 40px 10px;
+  }
+
+  .sign__right {
+    padding: 40px 20px;
+  }
+
+  .signup {
+    padding: 30px 20px;
+  }
+
+  .input__row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sign__outer {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .sign__inner {
+    width: 100%;
+    margin-top: 17%;
+  }
+
+  .sign__left {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .signUpImage {
+    width: 100%;
+    position: absolute;
+    max-width: 400px;
+    height: auto;
+    top: 3%;
+    z-index: -1;
+  }
+
+  .sign__right {
+    padding: 20px 15px;
+  }
+
+  .signup {
+    padding: 25px 15px;
+    background: white;
+  }
+
+  .input__row {
+    flex-direction: column;
+  }
+
+  .submit__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .login {
+    padding: 32px;
+  }
+
+  .otps {
+    width: 100% !important;
+  }
+}

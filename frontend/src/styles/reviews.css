@@ -1,0 +1,80 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.reviews-header {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.testimonial {
+  padding: 16px;
+  box-sizing: border-box;
+  outline: none;
+  height: 155px;
+  background: #fafafa;
+  border-top: 3px solid #e58880;
+  border-right: 3px solid #e58880;
+  border-radius: 24px;
+}
+
+.testimonial-text {
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 12px;
+  text-overflow: clip;
+}
+
+.testimonial-user {
+  display: flex;
+  gap: 16px;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.testimonial-info h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.testimonial-info p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #555;
+}
+
+.slick-slide {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.slick-list {
+  margin-bottom: 15px;
+}
+
+.about__us {
+  background: #000000 !important;
+  color: white !important;
+}
+.highlight__text {
+  color: #ffffff !important;
+}
+
+.brand__values {
+  color: #0fecef !important;
+}

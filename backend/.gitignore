@@ -1,0 +1,39 @@
+# Ignore environment files with secrets
+.env
+
+# Allow example env file (safe for Git)
+!.env.example
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings
+.factorypath
+.springBeans
+.sts4-cache
+
+# NetBeans & Gradle
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# Exclude all generated build folders except src/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Others
+HELP.md

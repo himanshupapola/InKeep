@@ -1,0 +1,48 @@
+.privacy-policy {
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+
+  color: #2d2d2d;
+}
+
+.policy-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1e3a8a; /* dark blue tone */
+}
+
+.policy-text,
+.privacy-policy p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.privacy-policy h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111827; 
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 0.3rem;
+}
+
+.privacy-policy ul {
+  margin-left: 1.8rem;
+  list-style: disc;
+  padding-left: 0.5rem;
+  color: #444;
+}
+
+.last-updated {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #6b7280; /* soft gray */
+  margin-top: 2rem;
+  font-style: italic;
+}

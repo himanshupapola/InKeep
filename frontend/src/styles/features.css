@@ -1,0 +1,45 @@
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 35px;
+  align-items: center;
+  height: 28vh;
+  
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(216 96 112);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 36px;
+  color: rgb(216 96 112);
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(49, 37, 22);
+  margin-bottom: 8px;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #999;
+}
+
+.divider {
+  width: 2px;
+  height: 120px;
+  background-color: #90caf9;
+}

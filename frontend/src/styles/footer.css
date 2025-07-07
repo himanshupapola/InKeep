@@ -1,0 +1,69 @@
+.ft {
+  padding-top: 2rem;
+  background-color: #45181e;
+  color: #fff;
+  text-align: center;
+}
+
+.ft-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+}
+
+.ft-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft-icon:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+.ft-sub {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+}
+
+.ft-sub a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ft-bottom {
+  position: relative;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  padding-top: 14px;
+  color: #aaa;
+  background-color: #000000;
+}
+.zigzag-svg {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: block;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .ft-bottom {
+    padding: 10px;
+  }
+}

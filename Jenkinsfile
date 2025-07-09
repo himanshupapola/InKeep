@@ -45,7 +45,7 @@ pipeline {
                     string(credentialsId: 'db-url', variable: 'DB_URL'),
                     string(credentialsId: 'brevo-api', variable: 'BREVO_API_KEY'),
                     string(credentialsId: 'weather-api-key', variable: 'VITE_OPENWEATHER_API_KEY'),
-                    string(credentialsId: 'upstash-url', variable: 'UPSTASH_REDIS_URL')
+                    string(credentialsId: 'upstash-url', variable: 'UPSTASH_REDIS_URL'),
                     string(credentialsId: 'vitapi-url', variable: 'VITE_API_BASE_URL')
                 ]) {
                     script {

@@ -83,8 +83,8 @@ pipeline {
                                 set VITE_GEONAMES_USERNAME=%VITE_GEONAMES_USERNAME%
                                 set CORS_ALLOWED_ORIGIN=%CORS_ALLOWED_ORIGIN%
 
-                                docker-compose down || exit 0
-                                docker-compose up -d --build
+                                docker compose down || exit 0
+                                docker compose up -d --build
                             '''
                         }
                     }

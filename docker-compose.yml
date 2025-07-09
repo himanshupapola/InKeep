@@ -5,16 +5,16 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        VITE_OPENWEATHER_API_KEY: ${VITE_OPENWEATHER_API_KEY}
+        VITE_GEONAMES_USERNAME: ${VITE_GEONAMES_USERNAME}
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL}
     image: otakucodes/inkeep-frontend
     restart: always
     ports:
       - "5173:80"
     depends_on:
       - backend
-    environment:
-      VITE_OPENWEATHER_API_KEY: ${VITE_OPENWEATHER_API_KEY}
-      VITE_GEONAMES_USERNAME: ${VITE_GEONAMES_USERNAME}
-      VITE_API_BASE_URL: ${VITE_API_BASE_URL}
 
   backend:
     build:
@@ -30,4 +30,4 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       BREVO_API_KEY: ${BREVO_API_KEY}
       UPSTASH_REDIS_URL: ${UPSTASH_REDIS_URL}
-      CORS_ALLOWED_ORIGIN: ${CORS_ALLOWED_ORIGIN}
+      CORS_ALLOWED_ORIGIN: "http://localhost:5173,http://40.81.242.37:5173"

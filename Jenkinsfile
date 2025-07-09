@@ -4,11 +4,9 @@ pipeline {
     environment {
         FRONTEND_IMAGE = "inkeep-frontend:latest"
         BACKEND_IMAGE  = "inkeep-backend:latest"
-
-        // Static values
         DB_USERNAME = "admin"
         VITE_GEONAMES_USERNAME = "himanshu_singh_papol"
-        CORS_ALLOWED_ORIGIN = "http://40.81.242.37:5173" 
+        CORS_ALLOWED_ORIGIN = "http://localhost:5173,http://40.81.242.37:5173"
     }
 
     stages {
@@ -61,7 +59,8 @@ pipeline {
                             export CORS_ALLOWED_ORIGIN="$CORS_ALLOWED_ORIGIN"
 
                             docker compose down || true
-                            docker compose up -d --build
+                            docker compose build --no-cache
+                            docker compose up -d
                         '''
                     }
                 }

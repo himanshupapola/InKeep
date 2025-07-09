@@ -22,7 +22,13 @@ pipeline {
             steps {
                 dir('frontend') {
                     script {
-                        sh "docker build -t $FRONTEND_IMAGE ."
+                        sh """
+                            docker build \\
+                              --build-arg VITE_API_BASE_URL=$VITE_API_BASE_URL \\
+                              --build-arg VITE_OPENWEATHER_API_KEY=$VITE_OPENWEATHER_API_KEY \\
+                              --build-arg VITE_GEONAMES_USERNAME=$VITE_GEONAMES_USERNAME \\
+                              -t $FRONTEND_IMAGE .
+                        """
                     }
                 }
             }

@@ -8,7 +8,7 @@ pipeline {
         // Static values
         DB_USERNAME = "admin"
         VITE_GEONAMES_USERNAME = "himanshu_singh_papol"
-        CORS_ALLOWED_ORIGIN = "http://localhost:5173/api"
+        CORS_ALLOWED_ORIGIN = "http://40.81.242.37:5173" 
     }
 
     stages {
@@ -22,13 +22,7 @@ pipeline {
             steps {
                 dir('frontend') {
                     script {
-                        sh """
-                            docker build \\
-                              --build-arg VITE_API_BASE_URL=$VITE_API_BASE_URL \\
-                              --build-arg VITE_OPENWEATHER_API_KEY=$VITE_OPENWEATHER_API_KEY \\
-                              --build-arg VITE_GEONAMES_USERNAME=$VITE_GEONAMES_USERNAME \\
-                              -t $FRONTEND_IMAGE .
-                        """
+                        sh "docker build -t $FRONTEND_IMAGE ."
                     }
                 }
             }

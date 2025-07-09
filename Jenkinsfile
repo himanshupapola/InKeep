@@ -68,8 +68,8 @@ pipeline {
                                 export VITE_GEONAMES_USERNAME="$VITE_GEONAMES_USERNAME"
                                 export CORS_ALLOWED_ORIGIN="$CORS_ALLOWED_ORIGIN"
 
-                                docker-compose down || true
-                                docker-compose up -d --build
+                                docker compose down || true
+                                docker compose up -d --build
                             '''
                         } else {
                             bat '''

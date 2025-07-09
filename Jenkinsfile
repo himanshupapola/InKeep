@@ -7,9 +7,8 @@ pipeline {
 
         // Static values
         DB_USERNAME = "admin"
-        VITE_API_BASE_URL = "http://localhost:8081/api"
         VITE_GEONAMES_USERNAME = "himanshu_singh_papol"
-        CORS_ALLOWED_ORIGIN = "http://localhost:5173"
+        CORS_ALLOWED_ORIGIN = "http://localhost:5173/api"
     }
 
     stages {
@@ -47,6 +46,7 @@ pipeline {
                     string(credentialsId: 'brevo-api', variable: 'BREVO_API_KEY'),
                     string(credentialsId: 'weather-api-key', variable: 'VITE_OPENWEATHER_API_KEY'),
                     string(credentialsId: 'upstash-url', variable: 'UPSTASH_REDIS_URL')
+                    string(credentialsId: 'vitapi-url', variable: 'VITE_API_BASE_URL')
                 ]) {
                     script {
                         sh '''

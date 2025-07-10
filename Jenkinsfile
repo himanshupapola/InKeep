@@ -32,7 +32,7 @@ pipeline {
               docker compose up -d
             """
           } else {
-            bat(['cmd.exe', '/c', """
+            bat """
               set VITE_API_BASE_URL=%VITE_API_BASE_URL% &&
               set VITE_OPENWEATHER_API_KEY=%VITE_OPENWEATHER_API_KEY% &&
               set VITE_GEONAMES_USERNAME=%VITE_GEONAMES_USERNAME% &&
@@ -44,7 +44,7 @@ pipeline {
               set CORS_ALLOWED_ORIGIN=%CORS_ALLOWED_ORIGIN% &&
               docker compose build &&
               docker compose up -d
-            """])
+            """
           }
         }
       }

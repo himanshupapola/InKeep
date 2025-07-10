@@ -1,8 +1,18 @@
-FROM node:18 AS build
+FROM node:18-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
 COPY . .
+
+# Handle Env Start
+ARG VITE_OPENWEATHER_API_KEY
+ARG VITE_GEONAMES_USERNAME
+ARG VITE_API_BASE_URL
+RUN echo "VITE_OPENWEATHER_API_KEY=$VITE_OPENWEATHER_API_KEY" > .env && \
+    echo "VITE_GEONAMES_USERNAME=$VITE_GEONAMES_USERNAME" >> .env && \
+    echo "VITE_API_BASE_URL=$VITE_API_BASE_URL" >> .env
+# Handle Env End
+
 RUN npm run build
 
 FROM nginx:alpine

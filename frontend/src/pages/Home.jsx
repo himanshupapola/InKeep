@@ -6,7 +6,6 @@ import image1 from "../assets/images/image1.jpg";
 import backImage from "../assets/images/heroDeco.png";
 import Features from "../components/Features";
 import Reviews from "../components/Reviews";
-
 import Footer from "../components/Footer";
 
 function Hero() {
@@ -22,7 +21,8 @@ function Hero() {
               Reflect Your Thoughts <br />
               <span>
                 In{" "}
-                <span className="hero-highlight"
+                <span
+                  className="hero-highlight"
                   style={{
                     color: "#9b2535",
                   }}

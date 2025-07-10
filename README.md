@@ -16,7 +16,7 @@ InKeep is a fullstack web application designed to help users securely write, sav
 
 ## 📸 Data Flow Diagram (Overview)
 
-<img src="./DFD.jpg" alt="This is an alt text." title="This is a sample image." width="550"/>
+<img src="./DFD.jpg" alt="DFD." title="DFD." width="550"/>
 
 ## 🌄 Website Showcase
 
@@ -104,6 +104,6 @@ REDIS_TOKEN=your_redis_token
 
 [frontend-link]: https://inkeep-production.up.railway.app/
 
-- Azure VM +AWS RDS (Jenkins Pipeline) - [`☁️ Click to Visit`][inkeep-link]
+- Azure VM + AWS RDS (Jenkins Pipeline) - [`☁️ Click to Visit`][inkeep-link]
 
 [inkeep-link]: https://inkeep.live/

@@ -94,9 +94,12 @@ REDIS_TOKEN=your_redis_token
 - 📤 PDF export and backup to cloud storage
 - 🧠 AI-based sentiment analysis of diary entries
 
-
 ## ⛳️ Live Preview
 
 - Railways - [`🚀 Click to Visit`][frontend-link]
 
 [frontend-link]: https://inkeep-production.up.railway.app/
+
+- Azure (Jenkins Pipeline) - [`☁️ Click to Visit`][inkeep-link]
+
+[inkeep-link]: https://inkeep.live/

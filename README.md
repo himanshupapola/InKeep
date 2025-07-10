@@ -16,7 +16,11 @@ InKeep is a fullstack web application designed to help users securely write, sav
 
 ## 📸 Data Flow Diagram (Overview)
 
-<img src="./DFD.jpg" alt="This is an alt text." title="This is a sample image." width="450"/>
+<img src="./DFD.jpg" alt="This is an alt text." title="This is a sample image." width="550"/>
+
+## 🌄 Website Showcase
+
+<img src="./Website_Showcase.png" alt="Website Showcase" title="Website Showcase." width="550"/>
 
 ## 🚀 Getting Started
 

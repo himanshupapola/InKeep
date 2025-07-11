@@ -93,10 +93,13 @@ REDIS_TOKEN=your_redis_token
 
 ## 🔮 Future Scope
 
-- 🌐 Community Section
-- 📊 Better visulization of data
-- 📤 PDF export and backup to cloud storage
-- 🧠 AI-based sentiment analysis of diary entries
+🌐 Community Section
+
+📊 Better visulization of data
+
+📤 PDF export and backup to cloud storage
+
+🧠 AI-based sentiment analysis of diary entries
 
 ## ⛳️ Live Preview
 

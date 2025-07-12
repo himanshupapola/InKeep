@@ -20,7 +20,6 @@ public class OtpSaveService {
         try (Jedis jedis = getJedisClient()) {
             String key = "otp:" + email.toLowerCase();
             jedis.setex(key, 600, otp);
-            System.out.println("🔐 [REDIS OTP SAVED] " + email + " → " + otp);
         }
     }
 
@@ -35,7 +34,6 @@ public class OtpSaveService {
         try (Jedis jedis = getJedisClient()) {
             String key = "otp:" + email.toLowerCase();
             jedis.del(key);
-            System.out.println("🧹 [REDIS OTP DELETED] for " + email);
         }
     }
 }

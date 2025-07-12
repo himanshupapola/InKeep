@@ -53,7 +53,7 @@ public class DiaryController {
             @PathVariable UUID id,
             @RequestBody DiaryEntryRequest request
     ) {
-        return ResponseEntity.ok(diaryService.updateDiaryEntryById(id, request)); // ✅ exact method name
+        return ResponseEntity.ok(diaryService.updateDiaryEntryById(id, request));
     }
 
 

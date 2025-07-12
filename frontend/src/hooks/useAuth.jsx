@@ -14,8 +14,26 @@ export default function useAuth() {
       });
 
       if (res.status === 403) {
-        // Silent fail — user is just not logged in
         setIsLoggedIn(false);
+        setIsLoggedIn(false);
+        console.clear();
+        console.clear();
+
+        console.log(
+          "%c 🚷 STOP: You are not supposed to be here!",
+          "color: red; font-size: 24px; font-weight: bold; padding: 8px;"
+        );
+
+        console.log(
+          "%c 💡 Tip: This area is protected by highly trained digital squirrels.",
+          "color: orange; font-size: 18px; font-style: italic; padding: 6px;"
+        );
+
+        console.log(
+          "%c 🐿️ Unauthorized access attempt detected. We’re telling your toaster.",
+          "color: #ff4081; font-size: 16px; padding: 6px;"
+        );
+
         return false;
       }
 
@@ -39,7 +57,6 @@ export default function useAuth() {
 
       return true;
     } catch {
-      // Don’t log anything here — fully silent
       setIsLoggedIn(false);
       return false;
     } finally {

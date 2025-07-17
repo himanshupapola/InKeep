@@ -107,7 +107,7 @@ REDIS_TOKEN=your_redis_token
 
 [frontend-link]: https://inkeep-production.up.railway.app/
 
-- Azure VM + AWS RDS (Jenkins Pipeline) - ☁️[`Click to Visit`][inkeep-link]
+- Azure VM + AIVEN DB (Jenkins Pipeline) - ☁️[`Click to Visit`][inkeep-link]
 
 [inkeep-link]: https://inkeep.live/
 

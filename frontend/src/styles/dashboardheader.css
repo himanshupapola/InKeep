@@ -51,6 +51,7 @@
   border-radius: 50%;
   border: 3px solid #e98491;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .primary_btn.active {

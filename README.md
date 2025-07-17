@@ -103,7 +103,7 @@ REDIS_TOKEN=your_redis_token
 
 ## ⛳️ Live Preview
 
-- Railways (Docker Cotainer) - 🚀[`Click to Visit`][frontend-link]
+- Railways (Docker Container) - 🚀[`Click to Visit`][frontend-link]
 
 [frontend-link]: https://inkeep-production.up.railway.app/
 
@@ -111,6 +111,6 @@ REDIS_TOKEN=your_redis_token
 
 [inkeep-link]: https://inkeep.live/
 
-- Heroku + AIVEN DB (Docker Cotainer) - 🦹[`Click to Visit`][heroku-link]
+- Heroku + AIVEN DB (Docker Container) - 🦹[`Click to Visit`][heroku-link]
 
 [heroku-link]: https://inkeep-frontend-46a56d91a170.herokuapp.com/

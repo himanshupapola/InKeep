@@ -110,3 +110,7 @@ REDIS_TOKEN=your_redis_token
 - Azure VM + AWS RDS (Jenkins Pipeline) - ☁️[`Click to Visit`][inkeep-link]
 
 [inkeep-link]: https://inkeep.live/
+
+- Heroku - ☁️[`Click to Visit`][heroku-link]
+
+[heroku-link]: https://inkeep-frontend-46a56d91a170.herokuapp.com/

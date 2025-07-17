@@ -111,6 +111,6 @@ REDIS_TOKEN=your_redis_token
 
 [inkeep-link]: https://inkeep.live/
 
-- Heroku - ☁️[`Click to Visit`][heroku-link]
+- Heroku - 🦹[`Click to Visit`][heroku-link]
 
 [heroku-link]: https://inkeep-frontend-46a56d91a170.herokuapp.com/

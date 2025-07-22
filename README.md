@@ -103,10 +103,6 @@ REDIS_TOKEN=your_redis_token
 
 ## ⛳️ Live Preview
 
-- Railways (Docker Container) - 🚀[`Click to Visit`][frontend-link]
-
-[frontend-link]: https://inkeep-production.up.railway.app/
-
 - Azure VM + AIVEN DB (Jenkins Pipeline) - ☁️[`Click to Visit`][inkeep-link]
 
 [inkeep-link]: https://inkeep.live/
